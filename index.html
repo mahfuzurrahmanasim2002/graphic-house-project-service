@@ -44,6 +44,12 @@
             align-items: center;
         }
         
+        .header-container img {
+            max-width: 268px;
+            height: auto;
+            width: 100%;
+        }
+        
         .logo {
             font-size: 1.8rem;
             font-weight: 700;
@@ -404,11 +410,23 @@
             .contact-container {
                 flex-direction: column;
             }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
         }
         
         @media (max-width: 768px) {
             .mobile-menu-btn {
                 display: block;
+            }
+            
+            .header-container img {
+                max-width: 180px;
             }
             
             nav ul {
@@ -433,17 +451,145 @@
             }
             
             .hero h1 {
-                font-size: 2.2rem;
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .hero {
+                background-position: center center;
+                background-size: cover;
             }
             
             .section-title h2 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
             .footer-content {
                 flex-direction: column;
                 gap: 1.5rem;
                 text-align: center;
+            }
+            
+            .footer-content img {
+                width: 200px;
+                height: auto;
+            }
+            
+            .footer-content p {
+                font-size: 0.9rem;
+            }
+            
+            .copyright {
+                font-size: 0.75rem;
+            }
+            
+            .copyright p {
+                word-break: break-word;
+                line-height: 1.5;
+            }
+            
+            .services-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-container {
+                padding: 1.5rem;
+            }
+            
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .contact-icon {
+                margin-right: 0;
+                margin-bottom: 0.5rem;
+            }
+            
+            .contact-item h4 {
+                font-size: 1rem;
+            }
+            
+            .contact-item p {
+                font-size: 0.9rem;
+                word-break: break-word;
+            }
+            
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 1.6rem;
+            }
+            
+            section {
+                padding: 3rem 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .header-container img {
+                max-width: 150px;
+            }
+            
+            .hero {
+                padding: 4rem 0;
+                background-position: 40% center;
+                background-size: cover;
+            }
+            
+            .cta-button {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+            
+            .service-price {
+                font-size: 1.7rem;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 15px;
+                right: 15px;
+                font-size: 1.4rem;
+            }
+            
+            .footer-content img {
+                width: 180px;
+            }
+            
+            .contact-container {
+                padding: 1rem;
+            }
+            
+            .contact-item {
+                margin-bottom: 1rem;
+            }
+            
+            .contact-item h4 {
+                font-size: 0.95rem;
+            }
+            
+            .contact-item p {
+                font-size: 0.85rem;
+            }
+            
+            .social-icons {
+                flex-wrap: wrap;
+                justify-content: center;
             }
         }
     </style>
@@ -788,5 +934,4 @@
         });
     </script>
 </body>
-
 </html>
